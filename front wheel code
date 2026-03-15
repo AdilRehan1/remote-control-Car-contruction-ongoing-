@@ -3,13 +3,14 @@
 Servo steeringServo;
 
 int potPin = A0;
+int servo = 9
 int potValue;
 
 int minAngle = 30;   // left limit
 int maxAngle = 150;  // right limit
 
 void setup() {
-  steeringServo.attach(9);
+  steeringServo.attach(servo);
 }
 
 void loop() {
